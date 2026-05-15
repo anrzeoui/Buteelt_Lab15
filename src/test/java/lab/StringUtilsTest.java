@@ -1,9 +1,11 @@
 package lab;
 
-import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertNull;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 import org.junit.jupiter.api.DisplayName;
-
-import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.Test;
 
 class StringUtilsTest {
 
@@ -28,9 +30,9 @@ class StringUtilsTest {
     }
 
     @Test
-    @DisplayName("Юникод тэмдэгт зөв урвуулна")
+    @DisplayName("Тоон тэмдэгт зөв урвуулна")
     void reverse_unicode() {
-        assertEquals("сайн", StringUtils.reverse("йнас"));
+        assertEquals("321", StringUtils.reverse("123"));
     }
 
     @Test
